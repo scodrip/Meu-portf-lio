@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins&display=swap" rel="stylesheet">
+    
+    
+    <title>Francisco Oliveira</title>
+</head>
+<body>
+    <header>
+      <div class="astro">
+        <img src="astro.jpeg" alt="Logo scodrip">
+      </div>
+      <ul>
+        <li> 
+        <a target="_blank" href="https://github.com/scodrip"> Meu Github </a>
+        </li>
+        <li>
+        <a target="_blank" href="mailto:scodrip.dev@gmail.com"> Meu Email </a>
+        </li>
+        <li>
+        <a target="_blank" href="https://wa.me/21973609600"> Meu Whatsapp</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+    <section class="container">
+      <div class="nome"> 
+         <h1>Francisco Oliveira</h1>
+         <h5>Dev em formação</h5>
+      </div>
+
+      <div onclick="displayAbout()" id="ghost">
+        <i id="animation" class="fa-solid fa-ghost"></i>
+
+      </div>
+
+      <div style=display:none; id="about">
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis atque eveniet illo sequi ea nesciunt impedit sint officia culpa incidunt, nostrum alias dicta fuga optio maiores, adipisci dignissimos. Sint!
+
+        </p>
+      </div>
+
+      <div class="form">
+          <div>
+         <p>Deixe seu contato!</p>  
+
+          </div>
+       
+        <form action="">
+         
+          <input type="text" placeholder="Seu melhor email:"\>
+         
+          <button>Enviar !</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+     function displayAbout() {
+      var ghost = document.getElementById('animation')
+      ghost.classList.toggle('rotate');
+      var display = document.getElementById('about')
+      display.classList.toggle('active');
+     }
+
+  </script>
+
+
+
+
+</body>
+</html>
